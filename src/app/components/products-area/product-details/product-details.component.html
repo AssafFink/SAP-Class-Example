@@ -1,0 +1,12 @@
+<div *ngIf="product">
+
+    <h3>{{product.name}}</h3>
+
+    <h3>{{product.price | currency}} | {{product.stock}} in stock</h3>
+
+    <img [src]="imageSource">
+    <br><br>
+
+    <a routerLink="/products">Back</a>
+
+</div>

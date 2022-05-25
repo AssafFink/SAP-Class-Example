@@ -1,0 +1,15 @@
+<div class="box">
+
+    <label>Select Location: </label>
+
+    <!-- Template Reference Variable -->
+    <select #location (change)="show(location)">
+        <option>North</option>
+        <option>South</option>
+        <option>East</option>
+        <option>West</option>
+    </select>
+
+    <span> Your location: {{location.value}}</span>
+
+</div>
